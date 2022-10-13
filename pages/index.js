@@ -1,6 +1,8 @@
+import Home from "../components/home/index"
+
 const index = () => {
   return (
-    <div>Virtual Tour Guide</div>
+    <Home />
   )
 }
 
