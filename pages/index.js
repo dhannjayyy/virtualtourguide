@@ -1,12 +1,11 @@
-import Home from "../components/home/index";
+import Hero from "../components/hero/index"
 import Footer from "../components/layoutComponents/footer/Footer"
+
 
 const index = () => {
   return (
-    <>
-    <Home />
+    <Hero />
     <Footer />
-    </>
   )
 }
 

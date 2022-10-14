@@ -13,7 +13,9 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sass": "^1.55.0",
-    "scss": "^0.2.4"
+    "scss": "^0.2.4",
+    "react-lottie": "^1.2.3",
+    "sass": "^1.55.0"
   },
   "devDependencies": {
     "eslint": "8.23.1",
