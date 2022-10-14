@@ -5,12 +5,14 @@ const Locations = () => {
   return (
     <div className="lt-location-section">
       <div className="lt-location-container">
-      
-        <LocationCard cityName={"Delhi"} page={"#"} />
-      
-        <LocationCard cityName={"Lucknow"} page={"#"}/>
-      
-        <LocationCard cityName={"Hyderabad"} page={"#"}/>
+        <h1 className="lt-location-heading">CITIES TO EXPLORE</h1>
+        <div className="lt-locations">
+          <LocationCard cityName={"Delhi"} page={"#"} />
+
+          <LocationCard cityName={"Lucknow"} page={"#"} />
+
+          <LocationCard cityName={"Hyderabad"} page={"#"} />
+        </div>
       </div>
     </div>
   );
