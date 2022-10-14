@@ -1,6 +1,7 @@
 *{
     margin:0;
     padding:0;
+    overflow-x: hidden;
 }
 .lottie-div{
     background-color: yellow;
@@ -17,7 +18,7 @@
     position: static;
     .h_heading{
         position: relative;
-        padding: 15% 10%;
+        padding: 5% 10%;
         
         h1{
             .virtual{
@@ -29,4 +30,15 @@
             margin-left: 100px;
         }
     }
+    .h_image{
+        margin-top: 20%;
+        margin-right: 10%;
+        transform: rotate(10deg);
+        overflow-y: hidden;
+        z-index: 2;
+        .g_image{
+            border: 20px solid white !important;
+        }
+    }
+    overflow-y: hidden;
 }
