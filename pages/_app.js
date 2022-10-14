@@ -1,5 +1,7 @@
 import '../styles/globals.css'
 import '../components/hero/style.scss'
+import '../components/contact/contact.scss'
+
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
