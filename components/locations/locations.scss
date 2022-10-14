@@ -1,0 +1,15 @@
+.lt-location-section{
+    background: url('../hero/hero.png');
+    background-color: black;
+    
+    .lt-location-container{
+        margin: auto;
+        background-color: #d4a05a;
+        padding:0.5%;
+        border-radius: 5px;
+        width:98%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,42 @@
+.lt-location-card {
+    background-image: url('../../../images/Delhi.png');
+    padding-top: 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1 1 300px;
+    margin: 1%;
+    background-position: center;
+    cursor: pointer;
+    transition: transform 0.2s ease-in;
+    border-radius: 5px;
+    border: 5px solid grey;
+
+    &:hover {
+        transform: scale(1.025);
+    }
+
+    h3 {
+        font-size: clamp(2rem, 1.4vw, 3rem);
+        color: white;
+        text-transform: uppercase;
+        padding: 10%;
+        background: linear-gradient(hsl(0 0% 0% / 0),
+                hsl(0 0% 0% / 0.3) 20%,
+                hsl(0 0% 0% / 1));
+    }
+}
+
+.lt-location-card:nth-of-type(2) {
+    background-image: url('../../../images/lucknow.png');
+}
+
+.lt-location-card:nth-of-type(3) {
+    background-image: url('../../../images/charminar.png');
+    background-position: center;
+}
+
+@media (max-width:768px){
+    .lt-location-card{
+        margin:2%;
+    }
+}
