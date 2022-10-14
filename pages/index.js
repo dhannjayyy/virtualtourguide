@@ -9,9 +9,8 @@ const index = () => {
     <>
     <Navbar />
     <Hero />
-    <Footer />
-    
     <Contact />
+    <Footer />
     </>
   )
 }

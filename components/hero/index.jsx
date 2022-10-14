@@ -1,8 +1,7 @@
 import Lottie from "react-lottie";
-import * as animationData from "./plane_lottie.json";
+import * as animationData from "./pointer.json";
 import Image from "next/image";
 import gatewayIndia from "./gateway.jpeg";
-import gsap from "gsap";
 import Logo from './logo.jsx';
 import Dashline from "./dashline";
 import Dashline2 from "./dashline2";
@@ -39,6 +38,9 @@ function Hero() {
             <span className="virtual"> VIRTUAL </span>
             <br /> TOUR GUIDE
           </h1>
+          <div className="button">
+          <button className="location">Explore <Lottie options={defaultOptions} style={{position:'relative'}} height={60} width={60} /></button>
+          </div>
         </div>
         <div className="h_image">
           <Image
