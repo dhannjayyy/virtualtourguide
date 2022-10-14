@@ -1,0 +1,32 @@
+*{
+    margin:0;
+    padding:0;
+}
+.lottie-div{
+    background-color: yellow;
+}
+.hero{
+    background-color:black;
+    background-image: url("./hero.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    position: static;
+    .h_heading{
+        position: relative;
+        padding: 10% 10%;
+        
+        h1{
+            .virtual{
+                font-size: 6rem;
+            }
+            color: rgb(231, 229, 229);
+            font-size: 4.5rem;
+            margin: auto;
+            margin-left: 100px;
+        }
+    }
+}
