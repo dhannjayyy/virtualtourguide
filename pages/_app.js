@@ -3,6 +3,7 @@ import '../components/layoutComponents/footer/footer.scss'
 import '../styles/globals.css'
 import '../components/hero/style.scss'
 import '../components/contact/contact.scss'
+import '../components/sites/sites.scss'
 
 import '../components/layoutComponents/navbar/navbar.scss'
 import '../components/locations/locations.scss'

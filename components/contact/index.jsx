@@ -19,12 +19,11 @@ function contact() {
         </div>
         <div className="contact-form">
             <form>
-                
                 <input type="text"  placeholder="Name"/>
                 <input type={"email"}  placeholder="Email"/>
                 <input type={"number"}placeholder="Phone No."/>
                 <input type={"text"} placeholder="Message" className="message"/>
-
+                <button className="submit-button"> Submit </button>
             </form>
         </div>
         </div>

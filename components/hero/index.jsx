@@ -2,7 +2,6 @@ import Lottie from "react-lottie";
 import * as animationData from "./pointer.json";
 import Image from "next/image";
 import gatewayIndia from "./gateway.jpeg";
-// import gsap from "gsap";
 import Logo from './logo.jsx';
 import Dashline from "./dashline";
 import Dashline2 from "./dashline2";
