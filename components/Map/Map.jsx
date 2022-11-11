@@ -1,21 +1,24 @@
-import { useMemo } from "react";
-import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
+import React, {useEffect} from "react";
+import Map from "mapmyindia-react/dist/Map";
 
-export default function Home() {
-  const { isLoaded } = useLoadScript({
-    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
-  });
-
-  if (!isLoaded) return <div>Loading...</div>;
-  return <Map />;
+function MapC() {
+//   useEffect(() => {
+    return <Map
+      markers={[
+        {
+          position: [18.5314, 73.845],
+          draggable: true,
+          title: "Marker title",
+          onClick: (e) => {
+            console.log("clicked ");
+          },
+          onDragend: (e) => {
+            console.log("dragged");
+          },
+        },
+      ]}
+    />;
+//   }, []);
 }
 
-function Map() {
-  const center = useMemo(() => ({ lat: 44, lng: -80 }), []);
-
-  return (
-    <GoogleMap zoom={10} center={center} mapContainerClassName="map-container">
-      <Marker position={center} />
-    </GoogleMap>
-  );
-}
+export default MapC;
