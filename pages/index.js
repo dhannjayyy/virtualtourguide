@@ -12,7 +12,7 @@ const index = () => {
     <>
     {/* <Navbar /> */}
     {/* <Sites/> */}
-    <MapContainer/>
+    <Map/>
     {/* <Hero />
     <Locations />
     <Contact />*/}
