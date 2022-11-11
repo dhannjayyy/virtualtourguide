@@ -8,9 +8,16 @@ import '../components/sites/sites.scss'
 import '../components/layoutComponents/navbar/navbar.scss'
 import '../components/locations/locations.scss'
 import '../components/locations/locationCard/LocationCard.scss'
+import '../components/Map/Map.scss'
+
+
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Component {...pageProps} />
+    </>
+  )
 }
 
 export default MyApp

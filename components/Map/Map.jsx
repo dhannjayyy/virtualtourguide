@@ -1,21 +1,24 @@
-import { useMemo } from "react";
-import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
+import React, { useEffect } from "react";
+import { mappls } from 'mappls-web-maps'
 
-export default function Home() {
-  const { isLoaded } = useLoadScript({
-    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
+
+function MapC() {
+
+  const styleMap = { width: '99%', height: '99vh', display: 'inline-block' }
+  const mapProps = { center: [28.567396, 77.251571], traffic: false, zoom: 18, geolocation: true, clickableIcons: true }
+  var mapObject;
+  var mapplsClassObject = new mappls();
+  mapplsClassObject.initialize("9756e4ab723995b33a4621b276f7bdc4", () => {
+    mapObject = mapplsClassObject.Map({ id: "map", properties: mapProps });
+    
+    mapObject.on("load", () => {
+    })
   });
-
-  if (!isLoaded) return <div>Loading...</div>;
-  return <Map />;
-}
-
-function Map() {
-  const center = useMemo(() => ({ lat: 44, lng: -80 }), []);
-
   return (
-    <GoogleMap zoom={10} center={center} mapContainerClassName="map-container">
-      <Marker position={center} />
-    </GoogleMap>
+    <div>
+      <div id="map" style={styleMap}></div>
+    </div>
   );
 }
+
+export default MapC;
