@@ -8,11 +8,16 @@ import Script from 'next/script'
 import '../components/layoutComponents/navbar/navbar.scss'
 import '../components/locations/locations.scss'
 import '../components/locations/locationCard/LocationCard.scss'
+import '../components/Map/Map.scss'
+
+
 
 function MyApp({ Component, pageProps }) {
-  <Script src="https://apis.mapmyindia.com/advancedmaps/v1/5fe1b6599a8af4ad136833bd774f0cef/map_load?v=1.3" />
-
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Component {...pageProps} />
+    </>
+  )
 }
 
 export default MyApp
